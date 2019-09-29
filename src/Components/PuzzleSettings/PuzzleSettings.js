@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import './PuzzleSettings.css';
 import {Redirect} from 'react-router-dom';
 
 class WordEntry extends Component {

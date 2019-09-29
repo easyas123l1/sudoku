@@ -1,0 +1,11 @@
+.Puzzle ul {
+  justify-content: space-around;
+  width: 90%;
+  display: inline-flex;
+  text-align: justify;
+  background-color: white;
+}
+
+p {
+  text-align: center;
+}
