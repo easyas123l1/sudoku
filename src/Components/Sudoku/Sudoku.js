@@ -44,12 +44,25 @@ class Sudoku extends Component {
     return (
       <div>
         <h1>Sudoku Puzzle</h1>
+        <div className="numberSelector">
+          <ul>
+            <li>1</li>  
+            <li>2</li> 
+            <li>3</li> 
+            <li>4</li> 
+            <li>5</li> 
+            <li>6</li> 
+            <li>7</li> 
+            <li>8</li> 
+            <li>9</li> 
+          </ul> 
+        </div>
         <div className="Puzzle">
           <ul>
             {this.state.lines.map(line => (
               <li id="numberRow" key={line.id} className="numberRow">
                 {line.text.map(number => (
-                  <p id={number.id} key={number.id}>{number.text}</p>
+                  <p id={number.id} key={number.id}>{number.id}</p>
                 ))}
               </li>
             ))}

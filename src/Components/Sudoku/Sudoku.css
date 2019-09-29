@@ -1,11 +1,31 @@
 .Puzzle ul {
   justify-content: space-around;
-  width: 90%;
+  width: 60%;
   display: inline-flex;
   text-align: justify;
   background-color: white;
+  border: 3px solid black;
+  padding: 0% 0%;
+  line-height: 3rem;
+  list-style-type: none;
 }
 
 p {
   text-align: center;
+} 
+
+.numberSelector ul {
+  display: inline-flex;
+  flex-direction: row;
+  border: 2px solid black;
+  list-style-type: none;
+  padding: 0% 0%;
+  min-width: 270px;
 }
+
+.numberSelector ul li {
+  border: 1px solid gray;
+  min-width: 30px;
+}
+
+
