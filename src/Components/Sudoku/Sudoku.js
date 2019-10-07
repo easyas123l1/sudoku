@@ -19,7 +19,9 @@ class Sudoku extends Component {
         let number = '-'
         const newNumber = {
           text: number,
-          id: numberID
+          id: numberID,
+          i: i,
+          j: j
         }
         line.push(newNumber);
         if (j + 1 === 9) {
@@ -62,7 +64,9 @@ class Sudoku extends Component {
             {this.state.lines.map(line => (
               <li id="numberRow" key={line.id} className="numberRow">
                 {line.text.map(number => (
+                  <div id={number.id} key={number.id} className='numberDiv'>
                   <p id={number.id} key={number.id}>{number.id}</p>
+                  </div>
                 ))}
               </li>
             ))}

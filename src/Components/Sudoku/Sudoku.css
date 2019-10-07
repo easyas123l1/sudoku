@@ -12,6 +12,7 @@
 
 p {
   text-align: center;
+  margin: 0;
 } 
 
 .numberSelector ul {
@@ -28,4 +29,15 @@ p {
   min-width: 30px;
 }
 
+.numberDiv {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 8%;
+  border: 1px solid gray;
+}
 
+li#numberRow {
+  width: 100%;
+  height: 11%;
+}
