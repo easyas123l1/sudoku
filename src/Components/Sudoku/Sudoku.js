@@ -17,17 +17,19 @@ class Sudoku extends Component {
       for (let j = 0; 9 > j; j++) {
         let numberID = `${i}, ${j}`;
         let number = '-'
+        let string2 = 'string'+j;
         const newNumber = {
           text: number,
           id: numberID,
           i: i,
-          j: j
+          j: string2
         }
         line.push(newNumber);
         if (j + 1 === 9) {
+          let string = 'string'+i;
           const newLine = {
             text: line,
-            id: i
+            id: string
           }
           this.setState(state => ({
             lines: state.lines.concat(newLine)
@@ -62,9 +64,9 @@ class Sudoku extends Component {
         <div className="Puzzle">
           <ul>
             {this.state.lines.map(line => (
-              <li id="numberRow" key={line.id} className="numberRow">
+              <li id={line.id} key={line.id} className={line.id}>
                 {line.text.map(number => (
-                  <div id={number.id} key={number.id} className='numberDiv'>
+                  <div id={number.j} key={number.j} className={`numberDiv ${number.j}`}>
                   <p id={number.id} key={number.id}>{number.id}</p>
                   </div>
                 ))}
