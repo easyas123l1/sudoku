@@ -67,7 +67,7 @@ class Sudoku extends Component {
               <li id={line.id} key={line.id} className={line.id}>
                 {line.text.map(number => (
                   <div id={number.j} key={number.j} className={`numberDiv ${number.j}`}>
-                  <p id={number.id} key={number.id}>{number.id}</p>
+                  <p id={number.id} key={number.id}>{number.text}</p>
                   </div>
                 ))}
               </li>
